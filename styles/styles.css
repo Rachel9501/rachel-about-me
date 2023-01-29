@@ -1,0 +1,73 @@
+body {
+    font: 12pt Arial;
+    margin: 15px;
+    background-image: url(../Picture1.jpg);
+}
+
+p {
+    text-indent: 3rem;
+}
+
+h1 {
+    font-size: 30pt;
+    margin-top: 22.5pt;
+    margin-bottom: 2pt;
+}
+
+h2 {
+    margin-top: 13.5pt;
+    margin-bottom: 1.8pt;
+}
+
+img {
+    width: 450px;
+    float: right;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: solid;
+}
+
+th {
+    border: solid;
+    padding-left: 4px;
+    width: 50px;
+}
+
+th.day {
+    width: 120px;
+    text-align: left;
+}
+
+td {
+    text-align: left;
+    padding-left: 4px;
+    border: solid;
+}
+
+td.discrete {
+    background-color: rgb(108, 180, 244);
+}
+
+td.calc {
+    background-color: rgb(70, 200, 126);
+}
+
+td.lunch {
+    background-color: gray;
+}
+
+td.web {
+    background-color: rgb(211, 167, 252);
+}
+
+td.intro {
+    background-color: rgb(72, 196, 209);
+}
+
+td.homework {
+    background-color: rgb(126, 167, 203);
+}
