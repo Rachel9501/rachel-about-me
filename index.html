@@ -12,43 +12,31 @@ or leaving my code on a public web site constitutes cheating.
 I acknowledge that  If I am found in violation of this policy this may result
 in a zero grade, a permanent record on file and possibly immediate failure of the class.
  
-Reflection (1-2 paragraphs):  This project was a good refresher. I did have trouble with the table. 
-
 --SELF GRADE--
-HEADER               A
-PERSONAL INFO        A 
-FAVE BOOKS           A
-HAIKU                A
-ESSAY                A
-SCHEDULE             A
+BODY        A 
+NAME        A 
+PORTRAIT    A
+HEADINGS    A
+SCHEDULE    A
 
---EXTRA ITEMS COMPLETED--Minimum of 5
-REPEATING BKG IMG (2pts)            NO
-CHANGE FONT (2pts)                  YES
-RT ALIGN PHOTO (2pts)               YES
-
-INDENT/CENTER HAIKU (2pts)          YES
-
-TABLE-TEXT ALIGN (2pts)             NO
-
-TABLE-COLOR CODE (2pts)             YES
-
-TABLE-EQUAL COL WIDTH (2pts)         NO
-
-Mouse over Hyperlink Underline (2pts) YES
-(Course self-grade forgot to include hyperlink option)
+--EXTRA CREDIT COMPLETED--
+FLOATING DIV (5pts)    NO
+STRIPED TABLE (5pts)   NO
+MODAL PORTRAIT (10pts) NO
+ARTISTIC MERIT (10pts) NO (Add description of what you did)
  
 -->
 <html>
 
 <head>
   <title>Rachel Tietjen</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body style="font-family: Helvetica;">
 
   <h1>Rachel Tietjen</h1>
-  <img src="cropped_photo.jpg" width="350px" alt="Photograph of Rachel Tietjen" style="float: right; padding: 10px;">
+  <img src="Picture4.jpg" alt="Photograph of Rachel Tietjen">
 
   <section">
     <h2>Personal Info</h2>
@@ -101,94 +89,93 @@ Mouse over Hyperlink Underline (2pts) YES
 
   <section>
   <h2>Class Schedule</h2>
-  <table  style="border: 1px solid;">
+  <table>
     <tr>
-      <th style="border: 1px solid; padding: 3px; border-spacing: 3px;"></th>
-      <th style="border: 1px solid; padding: 3px; border-spacing: 3px;">Monday</th>
-      <th style="border: 1px solid; padding: 3px; border-spacing: 3px;"">Tuesday</th>
-      <th style="border: 1px solid; padding: 3px; border-spacing: 3px;">Wednesday</th>
-      <th style="border: 1px solid; padding: 3px; border-spacing: 3px;">Thursday</th>
-      <th style="border: 1px solid; padding: 3px; border-spacing: 3px;">Friday</th>
+      <th></th>
+      <th class="day">Monday</th>
+      <th class="day">Tuesday</th>
+      <th class="day">Wednesday</th>
+      <th class="day">Thursday</th>
+      <th class="day">Friday</th>
     </tr>
     
     <tr>
-    <td style="border: 1px solid; padding: 3px; border-spacing: 3px;">10:00</td>
-    <td rowspan="4" style="border: 1px solid; padding: 3px; border-spacing: 3px; background-color: lightblue;">Discrete Mathematical Structures I
+    <td>10:00</td>
+    <td rowspan="4" class="discrete">Discrete Mathematical Structures I</td>
+    <td rowspan="4" class="calc">Calculus I</td>
+    <td rowspan="4" class="discrete">Discrete Mathematical Structures I
 </td>
-    <td rowspan="4" style="border: 1px solid; padding: 3px; border-spacing: 3px; background-color: lightcyan;">Calculus I</td>
-    <td rowspan="4" style="border: 1px solid; padding: 3px; border-spacing: 3px; background-color: lightblue;"">Discrete Mathematical Structures I
-</td>
-    <td rowspan="4" style="border: 1px solid; padding: 3px; border-spacing: 3px; background-color: lightcyan;">Calculus I</td>
-    <td rowspan="4" style="border: 1px solid; padding: 3px; border-spacing: 3px; background-color: lightblue;">Discrete Mathematical Structures I
+    <td rowspan="4" class="calc">Calculus I</td>
+    <td rowspan="4" class="discrete">Discrete Mathematical Structures I
 </td>
     </tr>
 
     <tr>
-    <td style="border: 1px solid; padding: 3px; border-spacing: 3px;"">10:30</td>
+    <td>10:30</td>
     </tr>
 
     <tr>
-    <td style="border: 1px solid; padding: 3px; border-spacing: 3px;">11:00</td>
+    <td>11:00</td>
     </tr>
 
     <tr>
-    <td style="border: 1px solid; padding: 3px; border-spacing: 3px;">12:00</td>
+    <td>12:00</td>
     </tr>
 
     <tr>
-    <td style="border: 1px solid; padding: 3px; border-spacing: 3px;">12:30</td>
-    <td colspan="5" style="border: 1px solid; padding: 3px; border-spacing: 3px; background-color: lightsteelblue;">Lunch</td>
+    <td>12:30</td>
+    <td colspan="5" class="lunch">Lunch</td>
     </tr>
 
     <tr>
-    <td style="border: 1px solid; padding: 3px; border-spacing: 3px;">1:00</td>
-    <td rowspan="5" style="border: 1px solid; padding: 3px; border-spacing: 3px; background-color: lightskyblue;">Web Programming I</td>
-    <td rowspan="6" style="border: 1px solid; padding: 3px; border-spacing: 3px; background-color: lightseagreen;">Introduction to Algorithms and Data Structures</td>
-    <td rowspan="6" style="border: 1px solid; padding: 3px; border-spacing: 3px; background-color: lightskyblue;">Web Programming I</td>
-    <td rowspan="6" style="border: 1px solid; padding: 3px; border-spacing: 3px; background-color: lightseagreen;">Introduction to Algorithms and Data Structures</td>
-    <td rowspan="6" style="border: 1px solid; padding: 3px; border-spacing: 3px; background-color: lightskyblue;">Web Programming I</td>
+    <td>1:00</td>
+    <td rowspan="5" class="web">Web Programming I</td>
+    <td rowspan="6" class="intro">Introduction to Algorithms and Data Structures</td>
+    <td rowspan="6" class="web">Web Programming I</td>
+    <td rowspan="6" class="intro">Introduction to Algorithms and Data Structures</td>
+    <td rowspan="6" class="web">Web Programming I</td>
     </tr>
 
     <tr>
-    <td style="border: 1px solid; padding: 3px; border-spacing: 3px;">1:30</td>
+    <td>1:30</td>
     </tr>
 
     <tr>
-    <td style="border: 1px solid; padding: 3px; border-spacing: 3px;">2:00</td>
+    <td>2:00</td>
     </tr>
 
     <tr>
-    <td style="border: 1px solid; padding: 3px; border-spacing: 3px;">2:30</td>
+    <td>2:30</td>
     </tr>
 
     <tr>
-    <td style="border: 1px solid; padding: 3px; border-spacing: 3px;">3:00</td>
+    <td>3:00</td>
     </tr>
 
     <tr>
-    <td style="border: 1px solid; padding: 3px; border-spacing: 3px;">3:30</td>
-    <td rowspan="6" style="border: 1px solid; padding: 3px; border-spacing: 3px; background-color: lightcyan;">Calculus I</td>
+    <td>3:30</td>
+    <td rowspan="6" class="calc">Calculus I</td>
     </tr>
 
     <tr>
-    <td style="border: 1px solid; padding: 3px; border-spacing: 3px;">4:00</td>
-    <td rowspan="5" colspan="4" style="border: 1px solid; padding: 3px; border-spacing: 3px;  background-color: cornflowerblue;">Homework (as needed)</td>
+    <td>4:00</td>
+    <td rowspan="5" colspan="4" class="homework">Homework (as needed)</td>
     </tr>
 
     <tr>
-    <td style="border: 1px solid; padding: 3px; border-spacing: 3px;">4:30</td>
+    <td>4:30</td>
     </tr>
 
     <tr>
-    <td style="border: 1px solid; padding: 3px; border-spacing: 3px;">5:00</td>
+    <td>5:00</td>
     </tr>
 
     <tr>
-    <td style="border: 1px solid; padding: 3px; border-spacing: 3px;">5:30</td>
+    <td>5:30</td>
     </tr>
 
     <tr>
-    <td style="border: 1px solid; padding: 3px; border-spacing: 3px;">6:00</td>
+    <td>6:00</td>
     </tr>
   </table>
   </section>
